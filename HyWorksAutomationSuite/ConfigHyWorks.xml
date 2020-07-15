@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HyWorksConfig>
+<LoginDetails>
+	<URL>https://172.27.1.81/Admin/en-US/Account/SignIn</URL>
+	<Username>hyworksadmin</Username>
+	<Password>123</Password>
+</LoginDetails>
+<SessionProvider>
+	<SharedProviderCount>2</SharedProviderCount>
+	<SharedProviders>
+		<Name>RDS1</Name>
+		<HostAddress>172.27.1.81</HostAddress>
+		<Weight>10</Weight>
+		<MaxSession>30</MaxSession>
+     </SharedProviders>
+	 <SharedProviders>
+		<Name>RDS2</Name>
+		<HostAddress>172.27.1.83</HostAddress>
+		<Weight>10</Weight>
+		<MaxSession>20</MaxSession>
+     </SharedProviders>
+	 <DedicatedProviderCount>2</DedicatedProviderCount>
+	 <DedicatedProviders>
+	 
+	 </DedicatedProviders>
+</SessionProvider>	 
+</HyWorksConfig>
